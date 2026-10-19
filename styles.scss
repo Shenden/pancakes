@@ -16,11 +16,13 @@ body {
 
 p {
   margin: 0;
-  padding: 16px 0;
+  padding: 8px 0;
 }
 
-ul {
+ul,
+ol {
   margin: 0;
+  padding: 16px;
 }
 
 img {
@@ -30,6 +32,7 @@ img {
 }
 
 h2 {
+  padding: 16px 0;
   margin: 0;
   color: #000000;
   font-size: 28px;
@@ -61,17 +64,12 @@ header {
       background-color: $info;
     }
     &-ingredients {
-      padding: $contentPadding;
       margin: $contentMargin;
     }
-    &-howto {
-      padding: $contentPadding;
+    &-how-to {
       margin: $contentMargin;
     }
     &-serving {
-      padding: $contentPadding;
-      margin: $contentMargin;
-
       .recipe-images {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
