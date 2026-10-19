@@ -7,6 +7,15 @@ body {
   padding: 0;
 }
 
+p {
+  margin: 0;
+  padding: 16px 0;
+}
+
+ul {
+  margin: 0;
+}
+
 img {
   width: 100%;
   display: block;
@@ -55,5 +64,5 @@ header {
 }
 .recipe-images img {
   height: 400px;
-  padding: 16px 0;
+  margin-top: 16px;
 }/*# sourceMappingURL=styles.css.map */
