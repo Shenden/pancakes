@@ -4,14 +4,16 @@ $bodybg: pink;
 $info: #ebebeb;
 $customHeadColor: #a10000;
 $mainPadding: 48px;
+$contentMargin: 16px 0;
+$contentPadding: 16px 0;
 
 body {
   font-family: "Open Sans", sans-serif;
   font-size: 1rem;
   background-color: $bodybg;
   margin: 0 48px;
-  padding: 0;
 }
+
 p {
   margin: 0;
   padding: 16px 0;
@@ -28,10 +30,10 @@ img {
 }
 
 h2 {
+  margin: 0;
   color: #000000;
   font-size: 28px;
   font-weight: 700;
-  padding-top: 16px;
   &.custom {
     color: $customHeadColor;
   }
@@ -54,21 +56,33 @@ header {
   .recipe {
     padding: $mainPadding;
     &-description {
-      margin: 16px 0;
       padding: 16px;
+      margin: $contentMargin;
       background-color: $info;
     }
-  }
-}
+    &-ingredients {
+      padding: $contentPadding;
+      margin: $contentMargin;
+    }
+    &-howto {
+      padding: $contentPadding;
+      margin: $contentMargin;
+    }
+    &-serving {
+      padding: $contentPadding;
+      margin: $contentMargin;
 
-.recipe-images {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  align-items: start;
-  gap: 16px;
+      .recipe-images {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        align-items: start;
+        gap: 16px;
 
-  img {
-    height: 400px;
-    margin-top: 16px;
+        img {
+          height: 400px;
+          margin-top: 16px;
+        }
+      }
+    }
   }
 }
