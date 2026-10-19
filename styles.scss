@@ -1,9 +1,64 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
+
 $bodybg: pink;
+$info: #ebebeb;
+$customHeadColor: #a10000;
+$mainPadding: 48px;
 
 body {
+  font-family: "Open Sans", sans-serif;
+  font-size: 1rem;
   background-color: $bodybg;
+  margin: 0 48px;
+  padding: 0;
+}
+img {
+  max-width: 100%;
+  display: block;
 }
 
-p {
-  color: blue;
+h2 {
+  color: #000000;
+  font-size: 28px;
+  font-weight: 700;
+  padding-bottom: 16px;
+  &.custom {
+    color: $customHeadColor;
+  }
+}
+
+header {
+  background-image: url("images/pannkaka.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 100%;
+  min-height: 500px;
+}
+
+.content {
+  background-color: white;
+  max-width: 80rem;
+  margin: 0 auto;
+
+  .recipe {
+    padding: $mainPadding;
+    &-description {
+      padding: 16px;
+      background-color: $info;
+    }
+  }
+}
+
+.grid-images {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: start;
+  gap: 16px;
+
+  img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+  }
 }
