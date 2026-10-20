@@ -1,8 +1,16 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
+:root {
+  --bodybg: pink;
+  --info: #ebebeb;
+  --customHeadColor: #a10000;
+  --mainPadding: 48px;
+  --contentMargin: 16px 0;
+}
+
 body {
   font-family: "Open Sans", sans-serif;
   font-size: 1rem;
-  background-color: pink;
+  background-color: var(--bodybg);
   margin: 0 48px;
 }
 
@@ -32,7 +40,7 @@ h2 {
   font-weight: 700;
 }
 h2.custom {
-  color: #a10000;
+  color: var(--customHeadColor);
 }
 
 header {
@@ -50,18 +58,18 @@ header {
   margin: 0 auto;
 }
 .content .recipe {
-  padding: 48px;
+  padding: var(--mainPadding);
 }
 .content .recipe-description {
   padding: 16px;
-  margin: 16px 0;
-  background-color: #ebebeb;
+  margin: var(--contentMargin);
+  background-color: var(--info);
 }
 .content .recipe-ingredients {
-  margin: 16px 0;
+  margin: var(--contentMargin);
 }
 .content .recipe-how-to {
-  margin: 16px 0;
+  margin: var(--contentMargin);
 }
 .content .recipe-serving .recipe-images {
   display: grid;
