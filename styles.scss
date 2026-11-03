@@ -33,6 +33,12 @@ img {
   object-fit: cover;
 }
 
+h1 {
+  &.custom {
+    color: var(--customHeadColor);
+  }
+}
+
 h2 {
   padding: 16px 0;
   margin: 0;
@@ -44,13 +50,13 @@ h2 {
   }
 }
 
-header {
-  background-image: url("images/pannkaka.jpg");
+.hero-pancake {
+  /*  background-image: url("images/pannkaka.jpg");
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: center; */
   width: 100%;
-  min-height: 500px;
+  height: auto; //min-height: 500px;
 }
 
 .content {

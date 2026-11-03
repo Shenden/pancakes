@@ -1,62 +1,80 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Pancakes</title>
     <link rel="stylesheet" href="/styles.css" />
     <link rel="stylesheet" href="/reset.css" />
-</head>
-<body>
-
-
+  </head>
+  <body>
     <div class="content">
-          <header></header>
+      <header class="hero-pancake">
+        <!--  Bildsom beksriver sidans innehåll. -->
+        <img
+          src="images/pannkaka.jpg"
+          alt="ready to serve pancakes on a plate"
+        />
+      </header>
 
-        <div class="recipe">
-    <h2 class="custom">Enkelt recept på pannkakor</h2>
+        <!-- main content för pannkaks-receptet -->
+      <main class="recipe"> 
+        <h1 class="custom">Enkelt recept på pannkakor</h1>
 
-    <div class="recipe-description">
-   <p>Gör traditionella tunna pannkakor med detta enkla och goda pannkaksrecept. </p>
+        <aside class="recipe-description">
+          <p>
+            Gör traditionella tunna pannkakor med detta enkla och goda
+            pannkaksrecept.
+          </p>
+        </aside>
+        
+        <!-- article med fler sektioner relaterat till det specifika receptet -->
+        <article>
+
+          <section class="recipe-ingredients">
+            <h2>Ingredienser</h2>
+            <p>För 4 portioner</p>
+            <ul>
+              <li>2 1/2 dl vetemjöl</li>
+              <li>1/2 tsk salt</li>
+              <li>6 dl mjölk</li>
+              <li>3 ägg</li>
+              <li>smör (till stekning)</li>
+              <li>sylt, bär eller frukt till servering</li>
+            </ul>
+          </section>
+          <section class="recipe-how-to">
+            <h2>Så här gör du</h2>
+            <ol>
+              <li>Blanda mjöl och salt i en bunke.</li>
+              <li>Vispa i hälften av mjölken och vispa till en slät smet.</li>
+
+              <li>Vispa i resten av mjölken och äggen.</li>
+              <li>3 ägg</li>
+              <li>Låt smeten vila ca 10 minuter.</li>
+              <li>
+                Stek tunna pannkakor i lite smör, för varje pannkaka, i en stek-
+                eller pannkakspanna.
+              </li>
+              <li>Servera med sylt, bär eller frukt</li>
+            </ol>
+          </section>
+
+          <section class="recipe-serving">
+            <h2>Serveringsförslag</h2>
+            <div class="recipe-images">
+              <img
+                src="images/kaka1.jpg"
+                alt="panacake served with pineapple"
+              />
+              <img
+                src="images/kaka2.jpg"
+                alt="plain stacked pancakes on a plate"
+              />
+            </div>
+          </section>
+        </article>
+      </main>
     </div>
-
-    <div class="recipe-ingredients">
-        <h2>Ingredienser</h2>
-        <p>För 4 portioner</p>
-        <ul>
-            <li>2 1/2 dl vetemjöl</li>
-            <li>1/2 tsk salt</li>
-            <li>6 dl mjölk</li>
-            <li>3 ägg</li>
-            <li>smör (till stekning)</li>
-            <li>sylt, bär eller frukt till servering</li>
-        </ul>
-    </div>
-
-        <div class="recipe-how-to">
-        <h2>Så här gör du</h2>
-        <ol>
-            <li>Blanda mjöl och salt i en bunke. </li>
-            <li> Vispa i hälften av mjölken och vispa till en slät smet. 
-            </li>
-
-            <li>Vispa i resten av mjölken och äggen.</li>
-            <li>3 ägg</li>
-            <li> Låt smeten vila ca 10 minuter.</li>
-            <li> Stek tunna pannkakor i lite smör, för varje pannkaka, i en stek- eller pannkakspanna.</li>
-            <li> Servera med sylt, bär eller frukt</li>
-        </ol>
-    </div>
-
-    <div class="recipe-serving">
-        <h2>Serveringsförslag</h2>
-        <div class="recipe-images">
-            <img src="images/kaka1.jpg" alt="">
-            <img src="images/kaka2.jpg" alt="">
-        </div>
-    </div>
-
-    </div>
-    </div>
-</body>
+  </body>
 </html>
