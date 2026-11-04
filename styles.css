@@ -19,10 +19,19 @@ p {
   padding: 8px 0;
 }
 
+ul {
+  list-style-type: none;
+}
+
 ul,
 ol {
   margin: 0;
   padding: 16px;
+}
+
+fieldset {
+  margin: 0;
+  padding: 0;
 }
 
 img {

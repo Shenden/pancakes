@@ -8,10 +8,8 @@
     <link rel="stylesheet" href="/reset.css" />
   </head>
   <body>
-
-   <!--  wrapper för att centrera och styra hela innehållet -->
+    <!--  wrapper för att centrera och styra hela innehållet -->
     <div class="content-wrapper">
-
       <header class="hero-pancake">
         <!--  Bildsom beksriver sidans innehåll. -->
         <img
@@ -20,30 +18,79 @@
         />
       </header>
 
-        <!-- main content för pannkaks-receptet -->
-      <main class="recipe"> 
-        <h1 class="custom">Enkelt recept på pannkakor</h1>
-
-        <aside class="recipe-description">
-          <p>
-            Gör traditionella tunna pannkakor med detta enkla och goda
-            pannkaksrecept.
-          </p>
-        </aside>
-
+      <!-- main content för pannkaks-receptet -->
+      <main class="recipe">
         <!-- article med fler sektioner/kapitel relaterat till det specifika receptet -->
         <article>
+          <header class="recipe-header">
+            <h1 class="custom">Enkelt recept på pannkakor</h1>
+
+            <p class="recipe-description">
+              Gör traditionella tunna pannkakor med detta enkla och goda
+              pannkaksrecept.
+            </p>
+          </header>
 
           <section class="recipe-ingredients">
             <h2>Ingredienser</h2>
             <p>För 4 portioner</p>
             <ul>
-              <li>2 1/2 dl vetemjöl</li>
-              <li>1/2 tsk salt</li>
-              <li>6 dl mjölk</li>
-              <li>3 ägg</li>
-              <li>smör (till stekning)</li>
-              <li>sylt, bär eller frukt till servering</li>
+              <li>
+                <input
+                  type="checkbox"
+                  id="ingredient-1"
+                  name="ingredient"
+                  value="flour"
+                />
+                <label for="ingredient-1">2 1/2 dl vetemjöl</label>
+              </li>
+              <li>
+                <input
+                  type="checkbox"
+                  id="ingredient-2"
+                  name="ingredient"
+                  value="salt"
+                />
+                <label for="ingredient-2">1/2 tsk salt</label>
+              </li>
+              <li>
+                <input
+                  type="checkbox"
+                  id="ingredient-3"
+                  name="ingredient"
+                  value="milk"
+                />
+                <label for="ingredient-3">6 dl mjölk</label>
+              </li>
+              <li>
+                <input
+                  type="checkbox"
+                  id="ingredient-4"
+                  name="ingredient"
+                  value="egg"
+                />
+                <label for="ingredient-4">3 ägg</label>
+              </li>
+              <li>
+                <input
+                  type="checkbox"
+                  id="ingredient-5"
+                  name="ingredient"
+                  value="butter"
+                />
+                <label for="ingredient-5">smör (till stekning)</label>
+              </li>
+              <li>
+                <input
+                  type="checkbox"
+                  id="ingredient-6"
+                  name="ingredient"
+                  value="toppings"
+                />
+                <label for="ingredient-6"
+                  >sylt, bär eller frukt till servering</label
+                >
+              </li>
             </ul>
           </section>
 
@@ -77,13 +124,11 @@
               />
             </div>
           </section>
-
         </article>
       </main>
 
       <!-- Footer för hela siten -->
-      <footer> 
-      </footer>
+      <footer></footer>
     </div>
   </body>
 </html>
