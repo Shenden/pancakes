@@ -4,10 +4,11 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Pancakes</title>
+     <link rel="stylesheet" href="/reset.css" />
     <link rel="stylesheet" href="/styles.css" />
-    <link rel="stylesheet" href="/reset.css" />
   </head>
   <body>
+    <a href="#main-content" class="skip-link">Skip to main content</a>
     <!--  wrapper för att centrera och styra hela innehållet -->
     <div class="content-wrapper">
       <header class="hero-pancake">
@@ -19,7 +20,7 @@
       </header>
 
       <!-- main content för pannkaks-receptet -->
-      <main class="recipe">
+      <main class="recipe" id="main-content" tabindex="-1">
         <!-- article med fler sektioner/kapitel relaterat till det specifika receptet -->
         <article>
           <header class="recipe-header">
