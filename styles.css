@@ -51,6 +51,15 @@ ol {
   padding: 16px;
 }
 
+nav {
+  display: flex;
+  justify-content: space-between;
+}
+nav img {
+  width: 100px;
+  height: 100px;
+}
+
 figcaption {
   padding: 0.75em 0;
 }
