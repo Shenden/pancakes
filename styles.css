@@ -142,4 +142,9 @@ h2.custom {
 .content-wrapper .recipe-serving .recipe-images img {
   height: 400px;
   margin-top: 16px;
+}
+
+footer {
+  padding: 8px 0;
+  text-align: center;
 }/*# sourceMappingURL=styles.css.map */
