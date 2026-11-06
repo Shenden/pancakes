@@ -55,8 +55,15 @@ ol {
   padding: 16px;
 }
 
+//BASIC INPUT STYLING
+
 input:focus {
   outline: 2px solid dodgerblue;
+}
+
+label:has(input[type="checkbox"]:checked) {
+  text-decoration: line-through;
+  color: dodgerblue;
 }
 
 nav {

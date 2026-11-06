@@ -55,6 +55,11 @@ input:focus {
   outline: 2px solid dodgerblue;
 }
 
+label:has(input[type=checkbox]:checked) {
+  text-decoration: line-through;
+  color: dodgerblue;
+}
+
 nav {
   display: flex;
   justify-content: space-between;
