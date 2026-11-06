@@ -51,6 +51,10 @@ ol {
   padding: 16px;
 }
 
+input:focus {
+  outline: 2px solid dodgerblue;
+}
+
 nav {
   display: flex;
   justify-content: space-between;
