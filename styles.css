@@ -57,7 +57,7 @@ input:focus {
 
 label:has(input[type=checkbox]:checked) {
   text-decoration: line-through;
-  color: dodgerblue;
+  color: #000000;
 }
 
 nav {
@@ -67,6 +67,10 @@ nav {
 nav img {
   width: 100px;
   height: 100px;
+}
+
+figure {
+  margin: 0;
 }
 
 figcaption {
