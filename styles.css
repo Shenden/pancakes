@@ -4,9 +4,9 @@
   --customHeadColor: #a10000;
   --mainPadding: 3rem;
   --contentMargin: 1rem 0;
-  --dark-blue: oklch(22% 14% 266deg);
+  --dark-blue: oklch(30.485% 0.08434 265.344);
   --medium-dark-blue: oklch(33% 24% 262deg);
-  --light-blue: oklch(60% 52% 264deg);
+  --light-blue: oklch(45.65% 0.15911 263.694);
 }
 
 /* * {
@@ -58,7 +58,7 @@ nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  border: solid 0.063rem var(--dark-blue);
+  border-bottom: solid 0.063rem var(--light-blue);
 }
 nav img {
   height: 100px;
@@ -158,12 +158,11 @@ label:has(input[type=checkbox]:checked) {
 }
 
 .content-wrapper {
-  background-color: white;
+  background-color: var(--medium-dark-blue);
   max-width: 80rem;
   margin: 0 auto;
 }
 .content-wrapper .recipe {
-  background-color: var(--medium-dark-blue);
   padding: var(--mainPadding);
 }
 .content-wrapper .recipe-description {
