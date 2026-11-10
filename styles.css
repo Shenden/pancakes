@@ -126,8 +126,8 @@ nav {
   align-items: center;
   border-bottom: solid 0.063rem var(--dark-green);
 }
-nav img {
-  height: 150px;
+nav .logo {
+  height: 100px;
 }
 nav .navigation-links {
   display: flex;

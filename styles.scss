@@ -141,8 +141,8 @@ nav {
   justify-content: space-between;
   align-items: center;
   border-bottom: solid 0.063rem var(--dark-green);
-  img {
-    height: 150px;
+  .logo {
+    height: 100px;
   }
   .navigation-links {
     display: flex;
@@ -255,7 +255,6 @@ nav {
 
   .start-page {
     padding: var(--mainPadding);
-
     .filter-radio-btn-group {
       background-color: var(--primary-yellow);
       border-radius: 0.5rem;
