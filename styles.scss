@@ -47,6 +47,16 @@ body {
   margin: 0 3rem;
   color: white;
 }
+button {
+  border: 0;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  padding: 1rem;
+  margin: 0.5rem;
+  &:hover {
+    background-color: whitesmoke;
+  }
+}
 
 p {
   margin: 0;
@@ -259,10 +269,11 @@ nav {
       background-color: var(--primary-yellow);
       border-radius: 0.5rem;
       border: solid 0.063rem oklch(94% 33% 103deg);
+      color: var(--dark-green);
       font-weight: bold;
       padding: 1rem;
       display: flex;
-      justify-content: center;
+      justify-content: space-around;
       gap: 0.5rem;
     }
   }
