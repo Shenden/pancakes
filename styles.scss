@@ -1,14 +1,17 @@
 :root {
-  --bodybg: var(--dark-blue); //rgb(241, 148, 163);
-  --info: var(--dark-blue); //#ebebeb;
+  --bodybg: var(--dark-green); //rgb(241, 148, 163);
+  --info: var(--dark-green); //#ebebeb;
   --customHeadColor: #a10000;
   --mainPadding: 3rem;
   --contentMargin: 1rem 0;
 
   //MAIN COLORS
-  --dark-blue: oklch(30.485% 0.08434 265.344);
-  --medium-dark-blue: oklch(33% 24% 262deg);
-  --light-blue: oklch(45.65% 0.15911 263.694);
+  --dark-green: oklch(54% 22% 137deg);
+  --medium-dark-green: oklch(61% 27% 141deg);
+  --primary-yellow: oklch(87% 40% 87deg);
+
+  //BASE COLORS
+  --black: oklch(20% 6% 137deg);
 }
 
 /* * {
@@ -99,11 +102,11 @@ h1,
 h2,
 h3,
 legend {
-  color: oklch(73% 32% 231deg);
+  color: oklch(100% 0% 90deg);
   text-shadow:
-    0 0 10px rgba(60, 182, 233, 0.6),
-    0 0 20px rgba(60, 182, 233, 0.4),
-    0 0 30px rgba(60, 182, 233, 0.3);
+    0 0 10px rgba(255, 255, 255, 0.6),
+    0 0 20px rgba(255, 255, 255, 0.4),
+    0 0 30px rgba(255, 255, 255, 0.3);
 }
 
 h2 {
@@ -128,7 +131,7 @@ label:has(input[type="checkbox"]:checked) {
 }
 
 input[type="radio"] {
-  accent-color: deeppink;
+  accent-color: var(--medium-dark-green);
 }
 
 // TOP NAVIGATION
@@ -137,9 +140,9 @@ nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  border-bottom: solid 0.063rem var(--light-blue);
+  border-bottom: solid 0.063rem var(--dark-green);
   img {
-    height: 100px;
+    height: 150px;
   }
   .navigation-links {
     display: flex;
@@ -147,7 +150,7 @@ nav {
       padding: 0.75rem;
     }
     a {
-      color: oklch(73% 32% 231deg);
+      color: oklch(100% 0% 90deg);
       text-decoration: none;
       font-size: 1rem;
       transition:
@@ -156,9 +159,9 @@ nav {
       &:hover {
         font-weight: 700;
         text-shadow:
-          0 0 10px rgba(60, 182, 233, 0.6),
-          0 0 20px rgba(60, 182, 233, 0.4),
-          0 0 30px rgba(60, 182, 233, 0.3);
+          0 0 10px rgba(255, 255, 255, 0.6),
+          0 0 20px rgba(255, 255, 255, 0.4),
+          0 0 30px rgba(255, 255, 255, 0.3);
       }
       @media (max-width: 767px) {
         font-size: 0.8rem;
@@ -172,8 +175,9 @@ nav {
 .hero-pancake {
   position: sticky;
   top: 0;
-  background-color: var(--medium-dark-blue);
+  background-color: var(--medium-dark-green);
   width: 100%;
+  z-index: 1000;
   //height: 500px;
   //overflow: hidden;
   //position: relative;
@@ -182,19 +186,19 @@ nav {
 //CONTENT STYLES
 
 .content-wrapper {
-  background-color: var(--medium-dark-blue);
+  background-color: var(--medium-dark-green);
   max-width: 80rem;
   margin: 0 auto;
 
   .recipe {
     padding: var(--mainPadding);
     &-description {
-      color: oklch(54% 45% 262deg);
+      color: var(--black);
       padding: 1rem;
       margin: var(--contentMargin);
-      background-color: var(--info);
+      background-color: var(--primary-yellow);
       border-radius: 0.5rem;
-      border: solid 0.063rem oklch(36% 27% 264deg);
+      border: solid 0.063rem oklch(94% 33% 103deg);
     }
     &-ingredients {
       margin: var(--contentMargin);
@@ -244,7 +248,6 @@ nav {
       h1 {
         border-bottom: solid 0.115rem;
         font-size: 4rem;
-        color: whitesmoke;
         text-shadow: none;
       }
     }
@@ -252,12 +255,12 @@ nav {
 
   .start-page {
     padding: var(--mainPadding);
-    //background-color: red;
 
     .filter-radio-btn-group {
-      background-color: var(--info);
+      background-color: var(--primary-yellow);
       border-radius: 0.5rem;
-      color: oklch(54% 45% 262deg);
+      border: solid 0.063rem oklch(94% 33% 103deg);
+      font-weight: bold;
       padding: 1rem;
       display: flex;
       justify-content: center;
@@ -269,5 +272,4 @@ nav {
 footer {
   padding: 0.75rem 0;
   text-align: center;
-  color: oklch(54% 45% 262deg);
 }

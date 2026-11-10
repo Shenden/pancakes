@@ -1,0 +1,172 @@
+<!doctype html>
+<html lang="sv">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pancakes</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/reset.css" />
+    <link rel="stylesheet" href="/styles.css" />
+  </head>
+  <body>
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+
+    <!--  wrapper för att centrera och styra hela innehållet -->
+    <div class="content-wrapper">
+      <header class="hero-pancake">
+        <nav class="main-nav-recipe">
+          <a href="/"
+            ><img src="images/logo.jpg" alt="Tillbaka till startsidan"
+          /></a>
+          <ul class="navigation-links">
+            <li><a href="index.html">Start</a></li>
+            <li><a href="om.html">Pannkaka</a></li>
+            <li><a href="dela.html">Dela recept</a></li>
+          </ul>
+        </nav>
+     
+      </header>
+
+   <!--  Dekorativ bild som beksriver sidans innehåll. -->
+        <img
+          src="images/pannkaka.jpg"
+          alt="färdigsteka pannkakor upplagda på tallrik toppade med grädde och jordgubbar" 
+          class="recipe-image"
+        />
+      <!-- main content -->
+      <main class="recipe" id="main-content" tabindex="-1">
+        <!-- article med fler sektioner/kapitel relaterat till det specifika receptet -->
+        <article>
+          <header class="recipe-header">
+            <h1 class="custom">Enkelt recept på pannkakor</h1>
+
+            <p class="recipe-description">
+              Gör traditionella tunna pannkakor med detta enkla och goda
+              pannkaksrecept.
+            </p>
+          </header>
+
+          <section class="recipe-ingredients">
+            <fieldset>
+              <legend>Ingredienser</legend>
+              <p>För 4 portioner</p>
+              <ul>
+                <li>
+                  <label for="ingredient-1">
+                    <input
+                      type="checkbox"
+                      id="ingredient-1"
+                      name="ingredient"
+                      value="flour"
+                    />
+                    2 1/2 dl vetemjöl</label
+                  >
+                </li>
+                <li>
+                  <label for="ingredient-2">
+                    <input
+                      type="checkbox"
+                      id="ingredient-2"
+                      name="ingredient"
+                      value="salt"
+                    />
+                    1/2 tsk salt</label
+                  >
+                </li>
+                <li>
+                  <label for="ingredient-3">
+                    <input
+                      type="checkbox"
+                      id="ingredient-3"
+                      name="ingredient"
+                      value="milk"
+                    />
+                    6 dl mjölk</label
+                  >
+                </li>
+                <li>
+                  <label for="ingredient-4">
+                    <input
+                      type="checkbox"
+                      id="ingredient-4"
+                      name="ingredient"
+                      value="egg"
+                    />
+                    3 ägg</label
+                  >
+                </li>
+                <li>
+                  <label for="ingredient-5">
+                    <input
+                      type="checkbox"
+                      id="ingredient-5"
+                      name="ingredient"
+                      value="butter"
+                    />
+                    smör (till stekning)</label
+                  >
+                </li>
+                <li>
+                  <label for="ingredient-6">
+                    <input
+                      type="checkbox"
+                      id="ingredient-6"
+                      name="ingredient"
+                      value="toppings"
+                    />
+                    sylt, bär eller frukt till servering</label
+                  >
+                </li>
+              </ul>
+            </fieldset>
+          </section>
+
+          <section class="recipe-how-to">
+            <h2>Så här gör du</h2>
+            <ol>
+              <li>Blanda mjöl och salt i en bunke.</li>
+              <li>Vispa i hälften av mjölken och vispa till en slät smet.</li>
+
+              <li>Vispa i resten av mjölken och äggen.</li>
+              <li>3 ägg</li>
+              <li>Låt smeten vila ca 10 minuter.</li>
+              <li>
+                Stek tunna pannkakor i lite smör, för varje pannkaka, i en stek-
+                eller pannkakspanna.
+              </li>
+              <li>Servera med sylt, bär eller frukt</li>
+            </ol>
+          </section>
+
+          <section class="recipe-serving">
+            <h2>Serveringsförslag</h2>
+            <div class="recipe-images">
+              <figure>
+                <img
+                  src="images/kaka1.jpg"
+                  alt="Pannkaka serverad med ananas"
+                />
+                <figcaption>Pannkaka med ananas som topping</figcaption>
+              </figure>
+              <figure>
+                <img
+                  src="images/kaka2.jpg"
+                  alt="En tallrik med staplade pannkakor"
+                />
+                <figcaption>En hög med färdigstekta pannkakor</figcaption>
+              </figure>
+            </div>
+          </section>
+        </article>
+      </main>
+    </div>
+
+    <!-- Footer  -->
+    <footer>&#169;Pannkakor 2026</footer>
+  </body>
+</html>
