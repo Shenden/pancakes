@@ -127,6 +127,10 @@ label:has(input[type="checkbox"]:checked) {
   color: white;
 }
 
+input[type="radio"] {
+  accent-color: deeppink;
+}
+
 // TOP NAVIGATION
 
 nav {
@@ -251,6 +255,10 @@ nav {
     //background-color: red;
 
     .filter-radio-btn-group {
+      background-color: var(--info);
+      border-radius: 0.5rem;
+      color: oklch(54% 45% 262deg);
+      padding: 1rem;
       display: flex;
       justify-content: center;
       gap: 0.5rem;
