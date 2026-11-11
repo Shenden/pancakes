@@ -1,37 +1,46 @@
 :root {
-  --bodybg: var(--dark-green); //rgb(241, 148, 163);
-  --info: var(--dark-green); //#ebebeb;
-  --customHeadColor: #a10000;
-  --mainPadding: 3rem;
-  --contentMargin: 1rem 0;
+  //FONTS
+  --ff-main: Open Sans, sans-serif;
 
-  //MAIN COLORS
-  --dark-green: oklch(54% 22% 137deg);
-  --medium-dark-green: oklch(61% 27% 141deg);
-  --primary-yellow: oklch(87% 40% 87deg);
+  //COLORS
+  --clr-green-50: oklch(61% 27% 141deg);
+  --clr-green-100: oklch(54% 22% 137deg);
+  --clr-yellow-50: oklch(94% 33% 103deg);
+  --clr-yellow-100: oklch(87% 40% 87deg);
 
-  //BASE COLORS
-  --black: oklch(20% 6% 137deg);
+  //BLACK & WHITE COLORS
+  --clr-black-900: oklch(20% 6% 137deg);
+  --clr-white-50: oklch(100% 0% 90deg);
+
+  //PADDING
+  --spacing-large: 3rem;
+  --spacing-medium: 0.75rem;
+  --spacing-small: 0.125rem;
+  --spacing-base: 0.5rem;
+
+  //MARGIN
+  --m-base: 1rem 0;
 }
 
-/* * {
-  box-sizing: border-box;
+//Simple reset
+
+* {
   margin: 0;
   padding: 0;
-} */
+}
 
 .skip-link {
   position: absolute;
   top: -100px;
   left: 1rem;
-  z-index: 1000;
+  z-index: 100 00;
   background-color: white;
   border-radius: 0.25rem;
-  color: black;
+  color: var(--clr-black-900);
   text-decoration: none;
-  padding: 0.75rem;
-  border: solid 0.15rem black;
-  outline-color: black;
+  padding: var(--spacing-medium);
+  border: solid 0.15rem var(--clr-black-900);
+  outline-color: var(--clr-black-900);
 
   &:focus {
     top: 1rem;
@@ -41,52 +50,46 @@
 ///BASIC STYLES
 
 body {
-  font-family: "Open Sans", sans-serif;
-  font-size: 1rem;
-  background-color: var(--bodybg);
+  font-family: var(--ff-main);
+  background-color: var(--clr-green-100);
   margin: 0 3rem;
-  color: white;
+  color: #fff;
 }
 button {
+  background-color: white;
   border: 0;
   border-radius: 0.5rem;
+  color: var(--clr-black-900);
   cursor: pointer;
   padding: 1rem;
   margin: 0.5rem;
   &:hover {
     background-color: whitesmoke;
   }
+  &:focus-visible {
+    outline: 0.125rem solid dodgerblue;
+  }
 }
 
-p {
-  margin: 0;
-  padding: 0.5rem 0;
+ul,
+ol {
+  padding: 1rem;
 }
 
 ul {
   list-style-type: none;
 }
 
-ul,
 ol {
-  margin: 0;
-  padding: 1rem;
-}
-
-figure {
-  margin: 0;
+  list-style-type: decimal;
 }
 
 figcaption {
-  color: whitesmoke;
   padding-top: 0.5rem;
-  margin: 0;
 }
 
 fieldset {
   border: none;
-  margin: 0;
-  padding: 0;
 
   ul {
     padding-left: 0;
@@ -94,15 +97,14 @@ fieldset {
 }
 
 legend {
-  font-size: 1.75rem;
-  font-weight: 700;
+  font-size: 1.5rem;
 }
 
 img {
   width: 100%;
   display: block;
   object-fit: cover;
-  //setting height to introductory image for chosen recipe
+  //setting height to decorative image for chosen recipe
   &.recipe-image {
     height: 500px;
   }
@@ -117,16 +119,16 @@ legend {
     0 0 10px rgba(255, 255, 255, 0.6),
     0 0 20px rgba(255, 255, 255, 0.4),
     0 0 30px rgba(255, 255, 255, 0.3);
+  font-weight: bold;
+}
+
+h1 {
+  font-size: 2rem;
 }
 
 h2 {
+  font-size: 1.5rem;
   padding: 1rem 0;
-  margin: 0;
-  font-size: 1.75em;
-  font-weight: 700;
-  &.custom {
-    color: var(--customHeadColor);
-  }
 }
 
 //BASIC INPUT STYLING
@@ -140,31 +142,34 @@ label:has(input[type="checkbox"]:checked) {
   color: white;
 }
 
+label[class*="custom-radio-clr"] {
+  color: var(--clr-black-900);
+}
+
 input[type="radio"] {
-  accent-color: var(--medium-dark-green);
+  accent-color: var(--clr-green-100);
 }
 
 // TOP NAVIGATION
 
-nav {
+.main-nav-recipe {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  border-bottom: solid 0.063rem var(--dark-green);
+  border-bottom: solid 0.063rem var(--clr-green-100);
   .logo {
     height: 80px;
   }
   .navigation-links {
     display: flex;
     li {
-      padding: 0.75rem;
+      padding: var(--spacing-medium);
     }
     a {
       color: oklch(100% 0% 90deg);
       text-decoration: none;
-      font-size: 1rem;
       transition:
-        text-shadow,
+        text-shadow 300ms ease,
         font-weight 300ms ease;
       &:hover {
         font-weight: 700;
@@ -182,10 +187,10 @@ nav {
 
 // HEADER
 
-.hero-pancake {
+.hero-main {
   position: sticky;
   top: 0;
-  background-color: var(--medium-dark-green);
+  background-color: var(--clr-green-50);
   width: 100%;
   z-index: 1000;
 }
@@ -195,8 +200,8 @@ nav {
 .badge {
   background-color: #fff;
   box-shadow: 0px 3px 4px rgba(0, 0, 0, 0.3);
-  color: var(--black);
-  padding: 0.125rem;
+  color: var(--clr-black-900);
+  padding: var(--spacing-small);
   border: solid 1px rgb(247, 243, 243);
   border-radius: 0.5em;
   font-size: 0.75rem;
@@ -207,25 +212,25 @@ nav {
 }
 
 .content-wrapper {
-  background-color: var(--medium-dark-green);
+  background-color: var(--clr-green-50);
   max-width: 80rem;
   margin: 0 auto;
 
   .recipe {
-    padding: var(--mainPadding);
+    padding: var(--spacing-large);
     &-description {
-      color: var(--black);
+      color: var(--clr-black-900);
       padding: 1rem;
-      margin: var(--contentMargin);
-      background-color: var(--primary-yellow);
+      margin: var(--m-base);
+      background-color: var(--clr-yellow-100);
       border-radius: 0.5rem;
-      border: solid 0.063rem oklch(94% 33% 103deg);
+      border: solid 0.063rem var(--clr-yellow-50);
     }
     &-ingredients {
-      margin: var(--contentMargin);
+      margin: var(--m-base);
     }
     &-how-to {
-      margin: var(--contentMargin);
+      margin: var(--m-base);
     }
     &-serving {
       .recipe-images {
@@ -255,6 +260,12 @@ nav {
     height: 500px;
     overflow: hidden;
     position: relative;
+
+    .hero-heading {
+      border-bottom: solid 0.115rem;
+      font-size: 4rem;
+    }
+
     .hero-text {
       backdrop-filter: blur(12px);
       border-radius: 1rem;
@@ -265,22 +276,16 @@ nav {
       top: 50%;
       left: 50%;
       transform: translate(-50%, -50%);
-
-      h1 {
-        border-bottom: solid 0.115rem;
-        font-size: 4rem;
-      }
     }
   }
 
   .start-page {
-    padding: var(--mainPadding);
+    padding: var(--spacing-large);
     .filter-radio-btn-group {
-      background-color: var(--primary-yellow);
+      background-color: var(--clr-yellow-100);
       border-radius: 0.5rem;
-      border: solid 0.063rem oklch(94% 33% 103deg);
-      color: var(--dark-green);
-      font-weight: bold;
+      border: solid 0.063rem var(--clr-yellow-50);
+      color: var(--primary-dark-green);
       padding: 1rem;
       display: flex;
       justify-content: space-around;
@@ -288,14 +293,14 @@ nav {
     }
 
     .recipe-filtered {
-      margin: 1rem 0;
+      margin: 3rem 0;
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
       grid-auto-rows: minmax(
         200px,
         auto
-      ); //grows the row/height depending on text-size
-      gap: 0.75rem;
+      ); //grows only the row/height affected text-size
+      gap: 1rem;
 
       //FITLERED RECIPE CARDS STYLING
 
@@ -305,12 +310,10 @@ nav {
         background-size: cover;
         background-position: 0;
         border-radius: 0.5rem;
-        color: var(--black);
+        color: var(--clr-black-900);
         text-align: center;
         position: relative;
-        img {
-          overflow: hidden;
-        }
+
         &:nth-child(2) {
           background-image: url("https://plus.unsplash.com/premium_photo-1664472619078-9db415ebef44?w=1400&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=NHwxMjA3fDA%3D");
         }
@@ -318,6 +321,8 @@ nav {
           background-image: url("https://images.unsplash.com/photo-1663153465971-7fbb838043ca?w=1400&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=NHwxMjA3fDA%3D");
         }
         .card-filtered-recipe-info {
+          color: var(--clr-yellow-50);
+          padding: var(--spacing-base);
           border-radius: 0 0 0.5rem 0.5rem;
           position: absolute;
           top: 80%;
@@ -334,6 +339,6 @@ nav {
 //FOOTER
 
 footer {
-  padding: 0.75rem 0;
+  padding: var(--spacing-medium) 0;
   text-align: center;
 }

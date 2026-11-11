@@ -3,13 +3,20 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Start</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <title>Pancakes</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="/reset.css" />
     <link rel="stylesheet" href="/styles.css" />
   </head>
   <body>
     <div class="content-wrapper">
-      <header class="hero-pancake">
+      <header class="hero-main">
         <nav class="main-nav-recipe">
           <a href="/"
             ><svg xmlns="http://w3.org" viewBox="0 0 150 150" class="logo">
@@ -33,7 +40,7 @@
 
       <header class="hero-image">
         <div class="hero-text">
-          <h1>Din källa för matrecept!</h1>
+          <h1 class="hero-heading">Din källa för matrecept!</h1>
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam,
             tempora! Cum a quia hic odit debitis. Dolores iste quasi, molestiae
@@ -49,25 +56,24 @@
           <legend></legend>
           <span>
             <input type="radio" id="Frukost" name="options" value="1" />
-            <label for="Frukost">Frukost</label>
+            <label class="custom-radio-clr"  for="Frukost">Frukost</label>
           </span>
 
           <span>
             <input type="radio" id="Middag" name="options" value="1" />
-            <label for="Middag">Middag</label>
+            <label class="custom-radio-clr" for="Middag">Middag</label>
           </span>
 
           <span>
             <input type="radio" id="Efterrätt" name="options" value="1" />
-            <label for="Efterrätt">Efterrätt</label>
+            <label class="custom-radio-clr"  for="Efterrätt">Efterrätt</label>
           </span>
 
           <span>
             <input type="radio" id="Fika" name="options" value="1" />
-            <label for="Fika">Fika</label>
+            <label class="custom-radio-clr" for="Fika">Fika</label>
           </span>
         </fieldset>
-
         <section class="recipe-filtered">
           <article class="card">
               <span class="badge">Populär</span>
