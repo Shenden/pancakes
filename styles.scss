@@ -193,14 +193,17 @@ nav {
 //CONTENT STYLES
 
 .badge {
-  background-color: var(--black);
-  color: #fff;
+  background-color: #fff;
+  box-shadow: 0px 3px 4px rgba(0, 0, 0, 0.3);
+  color: var(--black);
   padding: 0.125rem;
+  border: solid 1px rgb(247, 243, 243);
   border-radius: 0.5em;
   font-size: 0.75rem;
   max-width: 3.125rem;
   display: block;
-  margin: 0.5rem;
+  margin-right: auto;
+  transform: rotate(-10deg);
 }
 
 .content-wrapper {
