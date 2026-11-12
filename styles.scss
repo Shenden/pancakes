@@ -174,7 +174,7 @@ input[type="radio"] {
       padding: var(--spacing-medium);
     }
     a {
-      color: oklch(100% 0% 90deg);
+      color: var(--clr-yellow-100);
       text-decoration: none;
       transition:
         text-shadow 300ms ease,
@@ -183,9 +183,9 @@ input[type="radio"] {
       &:hover {
         font-weight: 700;
         text-shadow:
-          0 0 10px rgba(255, 255, 255, 0.6),
-          0 0 20px rgba(255, 255, 255, 0.4),
-          0 0 30px rgba(255, 255, 255, 0.3);
+          0 0 10px rgba(255, 204, 62, 0.6),
+          0 0 20px rgba(255, 204, 62, 0.4),
+          0 0 30px rgba(255, 204, 62, 0.3);
       }
     }
   }
