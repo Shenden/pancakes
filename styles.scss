@@ -267,12 +267,7 @@ input[type="radio"] {
     overflow: hidden;
     position: relative;
 
-    .hero-heading {
-      border-bottom: solid 0.115rem;
-      font-size: clamp(3rem, 5vw, 4rem);
-    }
-
-    .hero-text {
+    .hero-intro-bg {
       backdrop-filter: blur(12px);
       border-radius: 1rem;
       border: solid 1px rgba(242, 179, 160, 0.266);
@@ -282,6 +277,11 @@ input[type="radio"] {
       top: 50%;
       left: 50%;
       transform: translate(-50%, -50%);
+
+      .hero-heading {
+        border-bottom: solid 0.115rem;
+        font-size: clamp(3rem, 5vw, 4rem);
+      }
 
       .hero-intro {
         padding: clamp(var(--spacing-base), 3vw, var(--spacing-medium));
