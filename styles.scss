@@ -13,10 +13,10 @@
   --clr-white-50: oklch(100% 0% 90deg);
 
   //PADDING
-  --spacing-large: 3rem;
-  --spacing-medium: 0.75rem;
-  --spacing-small: 0.125rem;
-  --spacing-base: 0.5rem;
+  --spacing-large: 3rem; //48px
+  --spacing-medium: 0.75rem; //12px
+  --spacing-small: 0.125rem; //2px
+  --spacing-base: 0.5rem; //8px
 
   //MARGIN
   --m-base: 1rem 0;
@@ -73,6 +73,10 @@ button {
   }
 }
 
+span {
+  display: block;
+}
+
 ul,
 ol {
   padding: 1rem;
@@ -125,12 +129,14 @@ legend {
 }
 
 h1 {
-  font-size: 2rem;
+  //font-size: 2rem;
+  font-size: clamp(2rem, 3vw, 2.5rem);
 }
 
-h2 {
-  font-size: 1.5rem;
-  padding: 1rem 0;
+h2,
+legend {
+  //font-size: 1.5rem;
+  font-size: clamp(1.5rem, 2vw, 2rem);
 }
 
 //BASIC INPUT STYLING
@@ -173,15 +179,13 @@ input[type="radio"] {
       transition:
         text-shadow 300ms ease,
         font-weight 300ms ease;
+      font-size: clamp(0.5rem, 2.5vw, 1rem);
       &:hover {
         font-weight: 700;
         text-shadow:
           0 0 10px rgba(255, 255, 255, 0.6),
           0 0 20px rgba(255, 255, 255, 0.4),
           0 0 30px rgba(255, 255, 255, 0.3);
-      }
-      @media (max-width: 767px) {
-        font-size: 0.8rem;
       }
     }
   }
@@ -208,7 +212,6 @@ input[type="radio"] {
   border-radius: 0.5em;
   font-size: 0.75rem;
   max-width: 3.125rem;
-  display: block;
   margin-right: auto;
   transform: rotate(-10deg);
 }
@@ -245,7 +248,8 @@ input[type="radio"] {
         }
 
         img {
-          height: 400px;
+          height: clamp(300px, 30vw, 400px);
+          //height: 400px;
           margin-top: 1rem;
         }
       }
@@ -265,7 +269,7 @@ input[type="radio"] {
 
     .hero-heading {
       border-bottom: solid 0.115rem;
-      font-size: 4rem;
+      font-size: clamp(3rem, 5vw, 4rem);
     }
 
     .hero-text {
@@ -278,6 +282,10 @@ input[type="radio"] {
       top: 50%;
       left: 50%;
       transform: translate(-50%, -50%);
+
+      .hero-intro {
+        padding: clamp(var(--spacing-base), 3vw, var(--spacing-medium));
+      }
     }
   }
 
@@ -343,4 +351,9 @@ input[type="radio"] {
 footer {
   padding: var(--spacing-medium) 0;
   text-align: center;
+}
+
+//UTILITY CLASSES - TEMP FIX
+.p-tb {
+  padding: 1rem 0;
 }
