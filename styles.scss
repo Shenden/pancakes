@@ -301,11 +301,13 @@ input[type="radio"] {
   .badge {
     background-color: #fff;
     color: var(--clr-black-900);
-    padding: var(--spacing-small);
-    border: solid 1px rgb(247, 243, 243);
+    padding: var(--spacing-base);
     border-radius: 0.5em;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
     font-size: 0.75rem;
     margin-right: auto;
+    font-weight: bold;
   }
 
   //RECEPT/PANNKAKA
