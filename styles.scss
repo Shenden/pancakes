@@ -260,7 +260,7 @@ input[type="radio"] {
       grid-auto-rows: minmax(
         200px,
         auto
-      ); //grows only the row/height affected text-size
+      ); //grows only the row/height with the affected grid-item with larger text-size
       gap: 1rem;
 
       //FITLERED RECIPE CARDS STYLING
@@ -270,12 +270,15 @@ input[type="radio"] {
         background-image: url("https://plus.unsplash.com/premium_photo-1672846027109-e2c91500afef?w=1400&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=NHwxMjA3fDA%3D");
         background-size: cover;
         background-position: center;
+
         border-radius: 0.5rem;
         color: var(--clr-black-900);
+        cursor: pointer;
         text-align: center;
         display: flex;
         flex-direction: column;
         justify-content: flex-end;
+        transition: border 300ms ease;
 
         &:nth-child(2) {
           background-image: url("https://plus.unsplash.com/premium_photo-1664472619078-9db415ebef44?w=1400&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=NHwxMjA3fDA%3D");
@@ -289,6 +292,9 @@ input[type="radio"] {
           border-radius: 0 0 0.5rem 0.5rem;
           backdrop-filter: blur(14px);
           width: 100%;
+        }
+        &:hover {
+          border: solid 4px var(--clr-white-50);
         }
       }
     }
