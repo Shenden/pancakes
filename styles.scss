@@ -157,9 +157,9 @@ input[type="radio"] {
   accent-color: var(--clr-green-100);
 }
 
-// HEADER
+// MAIN HEADER /  MAIN MENU
 
-.hero-main {
+.main-nav-header {
   position: sticky;
   top: 0;
   background-color: var(--clr-green-50);
@@ -167,9 +167,7 @@ input[type="radio"] {
   z-index: 1000;
 }
 
-// TOP NAVIGATION
-
-.main-nav-recipe {
+.main-nav-menu {
   display: flex;
   justify-content: space-between;
   align-items: center;
