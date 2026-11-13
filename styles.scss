@@ -111,7 +111,7 @@ img {
   object-fit: cover;
   //setting height to decorative image for chosen recipe
   &.recipe-image {
-    height: 500px;
+    height: 31.25rem;
   }
 }
 
@@ -130,6 +130,7 @@ legend {
 h1 {
   //font-size: 2rem;
   font-size: clamp(2rem, 3vw, 2.5rem);
+  //width: 20ch;
 }
 
 h2,
@@ -282,7 +283,7 @@ input[type="radio"] {
           background-image: url("https://plus.unsplash.com/premium_photo-1664472619078-9db415ebef44?w=1400&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=NHwxMjA3fDA%3D");
         }
         &:nth-child(3) {
-          background-image: url("https://images.unsplash.com/photo-1663153465971-7fbb838043ca?w=1400&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=NHwxMjA3fDA%3D");
+          background-image: url("https://gustarivo.com/cdn/shop/articles/cacio-e-pepe_e60c578d-2dcb-4acf-9060-6b2980cf1481.webp?v=1778968501");
         }
         .card-info {
           color: var(--clr-yellow-50);
@@ -307,7 +308,6 @@ input[type="radio"] {
     border-bottom-left-radius: 0;
     font-size: 0.75rem;
     margin-right: auto;
-    font-weight: bold;
   }
 
   //RECEPT/PANNKAKA
