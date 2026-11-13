@@ -108,7 +108,6 @@ legend {
 
 img {
   width: 100%;
-  display: block;
   object-fit: cover;
   //setting height to decorative image for chosen recipe
   &.recipe-image {
@@ -353,7 +352,7 @@ footer {
   text-align: center;
 }
 
-//UTILITY CLASSES - TEMP FIX
-.p-tb {
+//UTILITY CLASSES - FOR SPECIFIC FIXES
+.p-tb-1-rem {
   padding: 1rem 0;
 }
