@@ -78,14 +78,14 @@ ol {
 }
 
 figcaption {
-  padding-top: 0.5rem;
+  padding-block-start: 0.5rem;
 }
 
 fieldset {
   border: none;
 }
 fieldset ul {
-  padding-left: 0;
+  padding-inline-start: 0;
 }
 
 legend {
@@ -173,7 +173,8 @@ input[type=radio] {
 .content-wrapper {
   background-color: var(--clr-green-50);
   max-width: 80rem;
-  margin: 0 auto;
+  margin-block: 0;
+  margin-inline: auto;
 }
 .content-wrapper .hero-start-image {
   background-image: url("https://images.unsplash.com/photo-1512621776951-a57141f2eefd?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=NHwxMjA3fDA%3D");
@@ -216,7 +217,7 @@ input[type=radio] {
   gap: 1.5rem;
 }
 .content-wrapper .start-page .recipe-filtered {
-  margin-top: 3rem;
+  margin-block-start: 3rem;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   grid-auto-rows: minmax(200px, auto);
@@ -260,7 +261,7 @@ input[type=radio] {
   border-top-left-radius: 0;
   border-bottom-left-radius: 0;
   font-size: 0.75rem;
-  margin-right: auto;
+  margin-inline-end: auto;
 }
 .content-wrapper .recipe {
   padding: var(--spacing-large);
@@ -292,7 +293,7 @@ input[type=radio] {
 }
 .content-wrapper .recipe-serving .recipe-images img {
   height: clamp(300px, 30vw, 400px);
-  margin-top: 1rem;
+  margin-block-start: 1rem;
 }
 
 footer {

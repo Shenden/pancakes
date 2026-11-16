@@ -91,14 +91,14 @@ ol {
 }
 
 figcaption {
-  padding-top: 0.5rem;
+  padding-block-start: 0.5rem;
 }
 
 fieldset {
   border: none;
 
   ul {
-    padding-left: 0;
+    padding-inline-start: 0;
   }
 }
 
@@ -204,7 +204,9 @@ input[type="radio"] {
 .content-wrapper {
   background-color: var(--clr-green-50);
   max-width: 80rem;
-  margin: 0 auto;
+  //margin: 0 auto;
+  margin-block: 0;
+  margin-inline: auto;
 
   //START PAGE STYLES
 
@@ -253,7 +255,8 @@ input[type="radio"] {
     }
 
     .recipe-filtered {
-      margin-top: 3rem;
+      //margin-top: 3rem;
+      margin-block-start: 3rem;
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
       grid-auto-rows: minmax(
@@ -307,7 +310,7 @@ input[type="radio"] {
     border-top-left-radius: 0;
     border-bottom-left-radius: 0;
     font-size: 0.75rem;
-    margin-right: auto;
+    margin-inline-end: auto;
   }
 
   //RECEPT/PANNKAKA
@@ -341,7 +344,7 @@ input[type="radio"] {
         img {
           height: clamp(300px, 30vw, 400px);
           //height: 400px;
-          margin-top: 1rem;
+          margin-block-start: 1rem;
         }
       }
     }
