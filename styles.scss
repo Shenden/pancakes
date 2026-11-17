@@ -3,15 +3,14 @@
   --ff-main: Open Sans, sans-serif;
 
   //COLORS
-  --clr-green-50: oklch(61% 27% 141deg);
-  --clr-green-100: oklch(54% 22% 137deg);
-  --clr-green-500: oklch(39.163% 0.06912 137.205);
-  --clr-yellow-50: oklch(94% 33% 103deg);
+  --clr-yellow-50: oklch(89.458% 0.13357 89.666);
   --clr-yellow-100: oklch(87% 40% 87deg);
 
   //BLACK & WHITE COLORS
+  --clr-black-500: oklch(60% 0% 90deg);
   --clr-black-900: oklch(20% 6% 137deg);
   --clr-white-50: oklch(100% 0% 90deg);
+  --clr-white-100: oklch(97% 0% 90deg);
 
   //PADDING
   --spacing-large: 3rem; //48px
@@ -54,12 +53,11 @@
 
 body {
   font-family: var(--ff-main);
-  background-color: var(--clr-green-100);
+  background-color: var(--clr-white-100);
   margin: 0 3rem;
-  color: var(--clr-white-50);
 }
 button {
-  background-color: white;
+  background-color: var(--clr-white-50);
   border: 0;
   border-radius: 0.5rem;
   color: var(--clr-black-900);
@@ -67,7 +65,7 @@ button {
   padding: 1rem;
   margin: 0.5rem;
   &:hover {
-    background-color: whitesmoke;
+    background-color: var(--clr-white-100);
   }
   &:focus-visible {
     outline: 0.125rem solid dodgerblue;
@@ -89,6 +87,7 @@ span {
 
 ul,
 ol {
+  color: var(--clr-black-500);
   padding: 1rem;
 }
 
@@ -113,6 +112,7 @@ fieldset {
 }
 
 img {
+  border-radius: 1rem;
   width: 100%;
   object-fit: cover;
   //setting height to decorative image for chosen recipe
@@ -121,19 +121,24 @@ img {
   }
 }
 
+dt {
+  font-weight: 700;
+}
+
+dd {
+  color: var(--clr-black-500);
+}
+
 h1,
 h2,
 h3,
 legend {
-  color: oklch(100% 0% 90deg);
-  text-shadow:
-    0 0 10px rgba(255, 255, 255, 0.6),
-    0 0 20px rgba(255, 255, 255, 0.4),
-    0 0 30px rgba(255, 255, 255, 0.3);
+  //color: oklch(100% 0% 90deg);
   font-weight: bold;
 }
 
 h1 {
+  color: var(--clr-black-900);
   font-size: 2rem;
   //font-size: clamp(2rem, 3vw, 2.5rem);
   //width: 20ch;
@@ -143,6 +148,10 @@ h2,
 legend {
   //font-size: 1.5rem;
   font-size: clamp(1.5rem, 2vw, 2rem);
+}
+
+h3 {
+  color: var(--clr-white-50);
 }
 
 p {
@@ -156,7 +165,7 @@ input:focus-visible {
 
 label:has(input[type="checkbox"]:checked) {
   text-decoration: line-through;
-  color: white;
+  color: black;
 }
 
 label[class*="custom-radio-clr"] {
@@ -173,10 +182,10 @@ input[type="radio"] {
   position: sticky;
   padding: 1rem;
   top: 0;
-  background-color: var(--clr-green-50);
+  background-color: var(--clr-white-50);
   width: 100%;
   z-index: 1000;
-  border-bottom: solid 0.063rem var(--clr-green-100);
+  border-bottom: solid 0.063rem var(--clr-white-100);
 }
 
 .main-nav-menu {
@@ -194,6 +203,7 @@ input[type="radio"] {
       padding: var(--spacing-medium);
     }
     a {
+      color: var(--clr-black-900);
       text-decoration: none;
       transition:
         text-shadow 300ms ease,
@@ -206,7 +216,7 @@ input[type="radio"] {
 //CONTENT STYLES
 
 .content-wrapper {
-  background-color: var(--clr-green-50);
+  background-color: var(--clr-white-50);
   max-width: 80rem;
   //margin: 0 auto;
   margin-block: 0;
@@ -236,6 +246,7 @@ input[type="radio"] {
 
       .hero-start-heading {
         border-bottom: solid 0.115rem;
+        color: var(--clr-white-50);
         font-size: clamp(3rem, 5vw, 4rem);
       }
 
@@ -285,7 +296,7 @@ input[type="radio"] {
         display: flex;
         flex-direction: column;
         justify-content: flex-end;
-        transition: border 300ms ease;
+        transition: transform 200ms ease;
 
         &:nth-child(2) {
           background-image: url("https://plus.unsplash.com/premium_photo-1664472619078-9db415ebef44?w=1400&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=NHwxMjA3fDA%3D");
@@ -294,14 +305,15 @@ input[type="radio"] {
           background-image: url("https://gustarivo.com/cdn/shop/articles/cacio-e-pepe_e60c578d-2dcb-4acf-9060-6b2980cf1481.webp?v=1778968501");
         }
         .card-info {
-          color: var(--clr-yellow-50);
+          color: var(--clr-white-50);
           padding: var(--spacing-base);
           border-radius: 0 0 0.5rem 0.5rem;
           backdrop-filter: blur(14px);
           width: 100%;
         }
         &:hover {
-          border: solid 4px var(--clr-white-50);
+          //border: solid 4px var(--clr-black-500);
+          transform: scale(0.96);
         }
       }
     }
@@ -341,7 +353,7 @@ input[type="radio"] {
       margin-block-start: auto;
 
       div {
-        border: solid 1px var(--clr-yellow-100);
+        border: solid 1px var(--clr-black-500);
         flex: 1;
         text-align: center;
       }
@@ -398,12 +410,7 @@ footer {
   grid-template-columns: repeat(2, 1fr);
   gap: 1.75rem;
 
-  @media (max-width: 767px) {
+  @media (max-width: 1024px) {
     grid-template-columns: 1fr;
   }
-}
-
-.grid-item-center-end {
-  justify-self: center;
-  align-self: end;
 }
