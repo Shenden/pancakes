@@ -350,6 +350,7 @@ input[type="radio"] {
     } */
     &-fact {
       display: flex;
+      /* auto  pushar ner och tar upp fria spacet ovanför, så space-between behövs ej i flex-column */
       margin-block-start: auto;
 
       div {
@@ -390,16 +391,16 @@ footer {
 .p-tb-1-rem {
   padding: 1rem 0;
 }
-.margin-bottom-12 {
+.margin-block-start {
   margin-block-start: 0.75rem;
 }
 
 // FLEX
 
-.flex-column-space-between {
+.flex-column {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  //justify-content: space-between;
   height: 100%;
 }
 

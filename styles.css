@@ -1,3 +1,4 @@
+@charset "UTF-8";
 :root {
   --ff-main: Open Sans, sans-serif;
   --clr-yellow-50: oklch(89.458% 0.13357 89.666);
@@ -305,6 +306,7 @@ input[type=radio] {
 }
 .content-wrapper .recipe-fact {
   display: flex;
+  /* auto  pushar ner och tar upp fria spacet ovanför, så space-between behövs ej i flex-column */
   margin-block-start: auto;
 }
 .content-wrapper .recipe-fact div {
@@ -337,14 +339,13 @@ footer {
   padding: 1rem 0;
 }
 
-.margin-bottom-12 {
+.margin-block-start {
   margin-block-start: 0.75rem;
 }
 
-.flex-column-space-between {
+.flex-column {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
   height: 100%;
 }
 
