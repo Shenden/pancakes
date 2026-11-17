@@ -79,6 +79,9 @@ button {
   border-radius: 0.175rem;
   color: var(--clr-black-900);
   padding: 0.75rem;
+  &:hover {
+    background-color: var(--clr-yellow-50);
+  }
 }
 span {
   display: block;
@@ -107,10 +110,6 @@ fieldset {
   ul {
     padding-inline-start: 0;
   }
-}
-
-legend {
-  font-size: 1.5rem;
 }
 
 img {
@@ -182,7 +181,6 @@ input[type="radio"] {
 
 .main-nav-menu {
   display: flex;
-  align-items: center;
 
   .logo {
     height: 2.813rem;
@@ -380,6 +378,9 @@ footer {
 .p-tb-1-rem {
   padding: 1rem 0;
 }
+.margin-bottom-12 {
+  margin-block-start: 0.75rem;
+}
 
 // FLEX
 
@@ -396,7 +397,6 @@ footer {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 1.75rem;
-  margin: 24px 0;
 
   @media (max-width: 767px) {
     grid-template-columns: 1fr;

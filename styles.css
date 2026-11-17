@@ -67,6 +67,9 @@ button:focus-visible {
   color: var(--clr-black-900);
   padding: 0.75rem;
 }
+.login-btn:hover {
+  background-color: var(--clr-yellow-50);
+}
 
 span {
   display: block;
@@ -94,10 +97,6 @@ fieldset {
 }
 fieldset ul {
   padding-inline-start: 0;
-}
-
-legend {
-  font-size: 1.5rem;
 }
 
 img {
@@ -160,7 +159,6 @@ input[type=radio] {
 
 .main-nav-menu {
   display: flex;
-  align-items: center;
 }
 .main-nav-menu .logo {
   height: 2.813rem;
@@ -326,6 +324,10 @@ footer {
   padding: 1rem 0;
 }
 
+.margin-bottom-12 {
+  margin-block-start: 0.75rem;
+}
+
 .flex-column-space-between {
   display: flex;
   flex-direction: column;
@@ -337,7 +339,6 @@ footer {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 1.75rem;
-  margin: 24px 0;
 }
 @media (max-width: 767px) {
   .grid-two-columns {
