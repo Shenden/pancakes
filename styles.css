@@ -64,10 +64,10 @@ button:focus-visible {
   background-color: var(--clr-yellow-100);
   border-radius: 0.175rem;
   color: var(--clr-black-900);
-  padding: 0.75rem;
 }
 .login-btn:hover {
   background-color: var(--clr-yellow-50);
+  cursor: pointer;
 }
 
 span {
@@ -161,7 +161,7 @@ input[type=radio] {
 
 .main-nav-header {
   position: sticky;
-  padding: 1rem;
+  padding: 1rem 3rem;
   top: 0;
   background-color: var(--clr-white-50);
   width: 100%;
