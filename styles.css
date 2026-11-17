@@ -61,6 +61,13 @@ button:focus-visible {
   outline: 0.125rem solid dodgerblue;
 }
 
+.login-btn {
+  background-color: var(--clr-yellow-100);
+  border-radius: 0.175rem;
+  color: var(--clr-black-900);
+  padding: 0.75rem;
+}
+
 span {
   display: block;
 }
@@ -143,36 +150,33 @@ input[type=radio] {
 
 .main-nav-header {
   position: sticky;
+  padding: 1rem;
   top: 0;
   background-color: var(--clr-green-50);
   width: 100%;
   z-index: 1000;
+  border-bottom: solid 0.063rem var(--clr-green-100);
 }
 
 .main-nav-menu {
   display: flex;
-  justify-content: space-between;
   align-items: center;
-  border-bottom: solid 0.063rem var(--clr-green-100);
 }
 .main-nav-menu .logo {
-  min-height: 80px;
+  height: 2.813rem;
 }
 .main-nav-menu .navigation-links {
   display: flex;
+  margin-inline-start: auto;
+  padding: 0;
 }
 .main-nav-menu .navigation-links li {
   padding: var(--spacing-medium);
 }
 .main-nav-menu .navigation-links a {
-  color: var(--clr-yellow-100);
   text-decoration: none;
   transition: text-shadow 300ms ease, font-weight 300ms ease;
   font-size: clamp(0.5rem, 2.5vw, 1rem);
-}
-.main-nav-menu .navigation-links a:hover {
-  font-weight: 700;
-  text-shadow: 0 0 10px rgba(255, 204, 62, 0.6), 0 0 20px rgba(255, 204, 62, 0.4), 0 0 30px rgba(255, 204, 62, 0.3);
 }
 
 .content-wrapper {
