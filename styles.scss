@@ -116,10 +116,6 @@ img {
   border-radius: 1rem;
   width: 100%;
   object-fit: cover;
-  //setting height to decorative image for chosen recipe
-  &.recipe-image {
-    height: 100%;
-  }
 }
 
 dt {
@@ -279,7 +275,7 @@ input[type="radio"] {
       grid-auto-rows: minmax(
         200px,
         auto
-      ); //grows only the row/height with the affected grid-item with larger text-size
+      ); //add 200px height & grows only the row/height with the affected grid-item with larger text-size
       gap: 1rem;
 
       //FITLERED RECIPE CARDS STYLING
@@ -387,27 +383,27 @@ footer {
   text-align: center;
 }
 
-//UTILITY CLASSES - FOR SPECIFIC FIXES
+//////////////// UTILITY CLASSES ////////////////////////
 
 .p-tb-1-rem {
   padding: 1rem 0;
 }
-.margin-block-start {
+.u-margin-block-start {
   margin-block-start: 0.75rem;
 }
 
 // FLEX
 
-.flex-column {
+.u-flex-column {
   display: flex;
   flex-direction: column;
   //justify-content: space-between;
   height: 100%;
 }
 
-// GRID CLASSES
+// GRID
 
-.grid-two-columns {
+.u-grid-two-columns {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 1.75rem;
@@ -415,4 +411,10 @@ footer {
   @media (max-width: 1024px) {
     grid-template-columns: 1fr;
   }
+}
+
+// HEIGHT
+
+.u-height {
+  height: 100%;
 }
