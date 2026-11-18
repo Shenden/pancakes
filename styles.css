@@ -137,7 +137,7 @@ h3 {
 }
 
 p {
-  padding-block: 1rem 1rem;
+  padding-block: var(--spacing-base);
 }
 
 input:focus-visible {
@@ -194,19 +194,16 @@ input[type=radio] {
   background-repeat: no-repeat;
   background-size: cover;
   min-height: 500px;
-  overflow: hidden;
-  position: relative;
 }
 .content-wrapper .hero .hero-inner {
   backdrop-filter: blur(12px);
+  background-color: rgba(0, 0, 0, 0.2);
   border-radius: 1rem;
   border: solid 1px rgba(242, 179, 160, 0.266);
+  width: 90%;
+  max-width: 50rem;
   padding: 1rem;
   text-align: center;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
 }
 .content-wrapper .hero .hero-inner .hero-heading {
   border-bottom: solid 0.115rem;
@@ -218,17 +215,18 @@ input[type=radio] {
   color: var(--clr-white-50);
 }
 .content-wrapper .start-page {
-  padding: var(--spacing-large);
+  padding-inline: var(--spacing-large);
+  padding-block-end: var(--spacing-large);
 }
 .content-wrapper .start-page .filter-radio-btn-group {
   background-color: var(--clr-yellow-100);
   border-radius: 0.5rem;
   border: solid 0.063rem var(--clr-yellow-50);
-  color: var(--primary-dark-green);
   padding: 1rem;
   display: flex;
   justify-content: center;
   gap: 1.5rem;
+  margin-block: var(--spacing-large);
 }
 .content-wrapper .start-page .recipe-filtered {
   margin-block-start: 3rem;
@@ -259,10 +257,13 @@ input[type=radio] {
 }
 .content-wrapper .start-page .recipe-filtered .card .card-info {
   color: var(--clr-white-50);
-  padding: var(--spacing-base);
   border-radius: 0 0 0.5rem 0.5rem;
   backdrop-filter: blur(14px);
   width: 100%;
+  padding-block: var(--spacing-base);
+}
+.content-wrapper .start-page .recipe-filtered .card .card-info p {
+  padding: 0;
 }
 .content-wrapper .start-page .recipe-filtered .card:hover {
   transform: scale(0.96);
@@ -278,7 +279,8 @@ input[type=radio] {
   margin-inline-end: auto;
 }
 .content-wrapper .recipe {
-  padding: var(--spacing-large);
+  padding-inline: var(--spacing-large);
+  padding-block-end: var(--spacing-large);
 }
 .content-wrapper .recipe-description {
   color: var(--clr-black-900);
@@ -327,6 +329,18 @@ footer {
   margin-block-start: 0.75rem;
 }
 
+.flex {
+  display: flex;
+}
+
+.flex-justify-content-center {
+  justify-content: center;
+}
+
+.flex-align-items-center {
+  align-items: center;
+}
+
 .u-flex-column {
   display: flex;
   flex-direction: column;
@@ -346,4 +360,8 @@ footer {
 
 .u-height {
   height: 100%;
+}
+
+.clr-yellow-50 {
+  color: var(--clr-yellow-50);
 }/*# sourceMappingURL=styles.css.map */
