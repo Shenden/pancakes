@@ -77,13 +77,14 @@ button {
   background-color: var(--clr-yellow-100);
   border-radius: 0.5rem;
   color: var(--clr-black-900);
-  padding: 0.5rem;
+  padding: 0.75rem;
 
   &:hover {
     background-color: var(--clr-yellow-50);
     cursor: pointer;
   }
 }
+
 span {
   display: block;
 }
@@ -132,7 +133,6 @@ h1,
 h2,
 h3,
 legend {
-  //color: oklch(100% 0% 90deg);
   font-weight: bold;
 }
 
@@ -156,6 +156,7 @@ h3 {
 p {
   padding-block: 1rem 1rem;
 }
+
 //BASIC INPUT STYLING
 
 input:focus-visible {
@@ -179,7 +180,8 @@ input[type="radio"] {
 
 .main-nav-header {
   position: sticky;
-  padding: 1rem 3rem;
+  padding-block: 1rem 1rem;
+  padding-inline: 3rem 3rem;
   top: 0;
   background-color: var(--clr-white-50);
   width: 100%;
@@ -187,10 +189,10 @@ input[type="radio"] {
   border-bottom: solid 0.063rem var(--clr-white-100);
   display: flex;
   align-items: center;
-}
 
-.logo {
-  height: 2.813rem;
+  .logo {
+    height: 2.813rem;
+  }
 }
 
 .main-nav-menu {
@@ -261,7 +263,6 @@ input[type="radio"] {
     }
 
     .recipe-filtered {
-      //margin-top: 3rem;
       margin-block-start: 3rem;
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -324,6 +325,7 @@ input[type="radio"] {
 
   .recipe {
     padding: var(--spacing-large);
+
     &-description {
       color: var(--clr-black-900);
       padding: 1rem;
@@ -332,12 +334,7 @@ input[type="radio"] {
       border-radius: 0.5rem;
       border: solid 0.063rem var(--clr-yellow-50);
     }
-    /*  &-ingredients {
-      border: solid 1px red;
-    } */
-    /*  &-how-to {
-      border: solid 1px lime;
-    } */
+
     &-fact {
       display: flex;
       /* auto  pushar ner och tar upp fria spacet ovanför, så space-between behövs ej i flex-column */
@@ -349,6 +346,7 @@ input[type="radio"] {
         text-align: center;
       }
     }
+
     &-serving {
       .recipe-images {
         display: grid;

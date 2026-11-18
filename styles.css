@@ -64,7 +64,7 @@ button:focus-visible {
   background-color: var(--clr-yellow-100);
   border-radius: 0.5rem;
   color: var(--clr-black-900);
-  padding: 0.5rem;
+  padding: 0.75rem;
 }
 .login-btn:hover {
   background-color: var(--clr-yellow-50);
@@ -159,7 +159,8 @@ input[type=radio] {
 
 .main-nav-header {
   position: sticky;
-  padding: 1rem 3rem;
+  padding-block: 1rem 1rem;
+  padding-inline: 3rem 3rem;
   top: 0;
   background-color: var(--clr-white-50);
   width: 100%;
@@ -168,8 +169,7 @@ input[type=radio] {
   display: flex;
   align-items: center;
 }
-
-.logo {
+.main-nav-header .logo {
   height: 2.813rem;
 }
 
@@ -287,14 +287,6 @@ input[type=radio] {
   background-color: var(--clr-yellow-100);
   border-radius: 0.5rem;
   border: solid 0.063rem var(--clr-yellow-50);
-}
-.content-wrapper .recipe {
-  /*  &-ingredients {
-    border: solid 1px red;
-  } */
-  /*  &-how-to {
-    border: solid 1px lime;
-  } */
 }
 .content-wrapper .recipe-fact {
   display: flex;
