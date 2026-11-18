@@ -64,6 +64,7 @@ button:focus-visible {
   background-color: var(--clr-yellow-100);
   border-radius: 0.5rem;
   color: var(--clr-black-900);
+  padding: 0.5rem;
 }
 .login-btn:hover {
   background-color: var(--clr-yellow-50);
@@ -164,26 +165,20 @@ input[type=radio] {
   width: 100%;
   z-index: 1000;
   border-bottom: solid 0.063rem var(--clr-white-100);
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  height: 2.813rem;
 }
 
 .main-nav-menu {
-  display: flex;
-}
-.main-nav-menu .logo {
-  height: 2.813rem;
-}
-.main-nav-menu .navigation-links {
-  display: flex;
   margin-inline-start: auto;
-  padding: 0;
 }
-.main-nav-menu .navigation-links li {
-  padding: var(--spacing-medium);
-}
-.main-nav-menu .navigation-links a {
-  color: var(--clr-black-900);
-  text-decoration: none;
-  transition: text-shadow 300ms ease, font-weight 300ms ease;
+.main-nav-menu .nav-links {
+  display: flex;
+  gap: 20px;
   font-size: clamp(0.5rem, 2.5vw, 1rem);
 }
 
