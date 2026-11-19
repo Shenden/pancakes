@@ -7,6 +7,7 @@
   --clr-black-900: oklch(20% 6% 137deg);
   --clr-white-50: oklch(100% 0% 90deg);
   --clr-white-100: oklch(97% 0% 90deg);
+  --clr-pink-900: oklch(65% 65% 357deg);
   --spacing-large: 3rem;
   --spacing-medium: 0.75rem;
   --spacing-small: 0.125rem;
@@ -108,11 +109,14 @@ img {
 }
 
 dt {
+  background-color: var(--clr-yellow-100);
   font-weight: 700;
+  color: var(--clr-black-50);
 }
 
 dd {
-  color: var(--clr-black-500);
+  background-color: var(--clr-yellow-100);
+  color: var(--clr-black-50);
 }
 
 h1,
@@ -269,8 +273,8 @@ input[type=radio] {
   transform: scale(0.96);
 }
 .content-wrapper .badge {
-  background-color: #fff;
-  color: var(--clr-black-900);
+  background-color: var(--clr-pink-900);
+  color: var(--clr-white-50);
   padding: var(--spacing-base);
   border-radius: 0.5em;
   border-top-left-radius: 0;
@@ -296,9 +300,9 @@ input[type=radio] {
   margin-block-start: auto;
 }
 .content-wrapper .recipe-fact div {
-  border: solid 1px var(--clr-black-500);
   flex: 1;
   text-align: center;
+  margin-inline: 1px;
 }
 .content-wrapper .recipe-serving .recipe-images {
   display: grid;
