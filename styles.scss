@@ -345,6 +345,7 @@ input[type="radio"] {
 
     &-fact {
       display: flex;
+      padding-block: var(--spacing-large);
       /* auto  pushar ner och tar upp fria spacet ovanför, så space-between behövs ej i flex-column */
       margin-block-start: auto;
 
