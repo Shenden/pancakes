@@ -72,6 +72,12 @@ button {
   &:focus-visible {
     outline: 0.125rem solid dodgerblue;
   }
+  &.submit-btn {
+    background-color: var(--clr-yellow-100);
+    &:hover {
+      background-color: var(--clr-yellow-50);
+    }
+  }
 }
 
 .login-btn {
@@ -375,6 +381,12 @@ input[type="radio"] {
         }
       }
     }
+  }
+
+  //SHARE RECIPE PAGE
+  .recipe-sharing {
+    padding-inline: var(--spacing-large);
+    padding-block-end: var(--spacing-large);
   }
 }
 

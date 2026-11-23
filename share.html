@@ -1,0 +1,150 @@
+<!doctype html>
+<html lang="sv">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Dela recept</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/reset.css" />
+    <link rel="stylesheet" href="/styles.css" />
+  </head>
+  <body>
+    <div class="content-wrapper">
+      <header class="main-nav-header">
+        <a href="/">
+          <svg
+            xmlns="http://w3.org"
+            viewBox="0 0 45 45"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2.5"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            role="img"
+            aria-label="Food Logo"
+            class="logo"
+          >
+            <path d="M15 9V17C15 19.2 16.8 21 19 21V36" />
+            <path d="M19 9V16" />
+            <path d="M23 9V17C23 19.2 21.2 21 19 21" />
+
+            <ellipse cx="30" cy="14.5" rx="3.5" ry="5.5" />
+            <path d="M30 20V36" />
+          </svg>
+        </a>
+        <nav class="main-nav-menu">
+          <ul class="nav-links">
+            <li><a href="index.html">Start</a></li>
+            <li><a href="pannkaka.html">Pannkaka</a></li>
+            <li><a href="share.html">Dela recept</a></li>
+          </ul>
+        </nav>
+        <a class="login-btn" href="#">Logga in</a>
+      </header>
+
+      <main class="recipe-sharing" id="main-content" tabindex="-1">
+        <h1>Dela recept</h1>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate
+          nesciunt ut, laudantium perspiciatis, natus earum nam iure aperiam
+          neque magnam, reprehenderit quia veniam dolorum impedit enim et
+          ducimus aliquid placeat.
+        </p>
+        <form action="" method="get">
+          <fieldset>
+            <legend>Om receptet</legend>
+
+            <div class="form-group">
+              <label for="recipe">Namn på recept</label>
+              <input type="text" name="recipe" id="recipe" required />
+            </div>
+
+            <div class="form-group">
+              <label for="category">Kategori</label>
+              <select name="category" id="category" required>
+                <option value="">Välj alternativ</option>
+                <option value="Frukost">Frukost</option>
+                <option value="lunch">Lunch</option>
+                <option value="dinner">Middag</option>
+                <option value="dessert">Efterrätt</option>
+              </select>
+            </div>
+
+            <div class="number-row">
+              <div class="form-group">
+                <label for="minutes">Tillagningstid (minuter)</label>
+                <input type="number" name="minutes" id="minutes" min="1" />
+              </div>
+
+              <div class="form-group">
+                <label for="portions">Antal portioner</label>
+                <input type="number" name="portions" id="portions" min="1" />
+              </div>
+            </div>
+          </fieldset>
+
+          <fieldset>
+            <legend>Svårighetsgrad</legend>
+            <div class="radio-group">
+              <div>
+                <input type="radio" name="level" id="easy" value="easy" />
+                <label for="easy">Lätt</label>
+              </div>
+
+              <div>
+                <input type="radio" name="level" id="medium" value="medium" />
+                <label for="medium">Medium</label>
+              </div>
+
+              <div>
+                <input type="radio" name="level" id="hard" value="hard" />
+                <label for="hard">Svår</label>
+              </div>
+            </div>
+          </fieldset>
+
+          <fieldset>
+            <legend>Receptet</legend>
+
+            <div class="form-group">
+              <label for="ingredients">Ingredienser</label>
+              <textarea name="ingredients" id="ingredients" rows="5"></textarea>
+            </div>
+
+            <div class="form-group">
+              <label for="instructions">Gör så här</label>
+              <textarea
+                name="instructions"
+                id="instructions"
+                rows="5"
+              ></textarea>
+            </div>
+          </fieldset>
+
+          <fieldset>
+            <legend>Om dig</legend>
+            <div class="form-group">
+              <label for="name">Namn</label>
+              <input type="text" name="name" id="name" />
+            </div>
+
+            <div class="form-group">
+              <label for="email">E-post</label>
+              <input type="email" name="email" id="email" />
+            </div>
+          </fieldset>
+
+          <button type="submit" class="submit-btn">Skicka recept</button>
+        </form>
+      </main>
+    </div>
+    <!-- Footer  -->
+    <footer>&#169;Pannkakor 2026</footer>
+  </body>
+</html>
