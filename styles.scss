@@ -427,6 +427,10 @@ footer {
   }
 }
 
+.u-grid-fullwidth {
+  grid-column: 1 / -1;
+}
+
 // HEIGHT
 
 .u-height {
