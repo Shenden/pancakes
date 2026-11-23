@@ -166,6 +166,10 @@ p {
   padding-block: var(--spacing-base);
 }
 
+a {
+  text-decoration: none;
+}
+
 //BASIC INPUT STYLING
 
 input:focus-visible {
@@ -220,6 +224,7 @@ textarea {
   margin-inline-start: auto;
 
   .nav-links {
+    color: var(--clr-black-900);
     display: flex;
     gap: 20px;
     font-size: clamp(0.5rem, 2.5vw, 1rem);
