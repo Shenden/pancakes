@@ -185,6 +185,18 @@ input[type="radio"] {
   accent-color: var(--clr-green-100);
 }
 
+input:not([type="checkbox"], [type="radio"]),
+select,
+textarea {
+  padding: var(--spacing-base);
+  width: 100%;
+}
+
+//FORM STYLING
+.form-group {
+  padding-block: var(--spacing-base);
+}
+
 // MAIN HEADER /  MAIN MENU
 
 .main-nav-header {
@@ -428,6 +440,12 @@ footer {
 }
 
 // GRID
+
+.u-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 24px;
+}
 
 .u-grid-two-columns {
   display: grid;
