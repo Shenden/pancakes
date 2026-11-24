@@ -215,7 +215,7 @@ input[type=radio] {
 input:user-invalid,
 select:user-invalid,
 textarea:user-invalid {
-  border: solid 2px tomato;
+  box-shadow: 0 0 10px 2px red;
 }
 
 .form-group {
