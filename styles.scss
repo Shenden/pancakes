@@ -229,6 +229,12 @@ input[type="radio"] {
   margin-inline-end: var(--spacing-small);
 }
 
+input:user-invalid,
+select:user-invalid,
+textarea:user-invalid {
+  border: solid 2px tomato;
+}
+
 //FORM STYLING
 
 .form-group {

@@ -212,6 +212,12 @@ input[type=radio] {
   margin-inline-end: var(--spacing-small);
 }
 
+input:user-invalid,
+select:user-invalid,
+textarea:user-invalid {
+  border: solid 2px tomato;
+}
+
 .form-group {
   display: flex;
   flex-direction: column;
