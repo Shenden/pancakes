@@ -155,7 +155,7 @@ a {
 }
 
 input:focus-visible {
-  outline: 0.125rem solid rgb(64, 227, 64);
+  outline: 0.125rem solid dodgerblue;
 }
 
 label:has(input[type=checkbox]:checked) {
@@ -205,7 +205,11 @@ textarea {
 }
 
 label {
-  margin-bottom: 12px;
+  margin-block-end: 12px;
+}
+
+input[type=radio] {
+  margin-inline-end: var(--spacing-small);
 }
 
 .form-group {
@@ -238,7 +242,7 @@ label {
   align-items: center;
 }
 .main-nav-header .logo {
-  height: 2.813rem;
+  height: 3.813rem;
 }
 
 .main-nav-menu {
