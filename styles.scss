@@ -5,12 +5,15 @@
   //COLORS
   --clr-yellow-50: oklch(89.458% 0.13357 89.666);
   --clr-yellow-100: oklch(87% 40% 87deg);
+  --clr-yellow-hover: oklch(from var(--clr-yellow-100) calc(l + 0.05) c h);
 
   //BLACK & WHITE COLORS
   --clr-black-500: oklch(60% 0% 90deg);
   --clr-black-900: oklch(20% 6% 137deg);
   --clr-white-50: oklch(100% 0% 90deg);
   --clr-white-100: oklch(97% 0% 90deg);
+
+  //EXTRA COLORS
   --clr-pink-900: oklch(65% 65% 357deg);
 
   //PADDING
@@ -75,7 +78,7 @@ button {
   &.submit-btn {
     background-color: var(--clr-yellow-100);
     &:hover {
-      background-color: var(--clr-yellow-50);
+      background-color: var(--clr-yellow-hover);
     }
   }
 }
@@ -87,7 +90,7 @@ button {
   padding: clamp(0.45rem, 1vw, 0.75rem);
 
   &:hover {
-    background-color: var(--clr-yellow-50);
+    background-color: var(--clr-yellow-hover);
     cursor: pointer;
   }
 }
